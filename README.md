@@ -81,5 +81,5 @@ To deploy on platforms like **Netlify**:
 2. Follow deployment instructions for your chosen platform.
 
 ## 📬 Contact
-For questions or contributions, reach out via GitHub or email at `harshvrddubey@gmail.com`.
+For questions or contributions, reach out via GitHub or email at `harshvrddubey565@gmail.com`.
 
