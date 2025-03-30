@@ -96,8 +96,8 @@ export default function WeatherApp() {
         recentSearches={recentSearches}
         setCity={setCity}
         fetchWeather={fetchWeather}
-      />{" "}
-      {/* ✅ Using the new component */}
+      />
+      
       {error && <p className="text-red-500 text-center">{error}</p>}
       {weather && (
         <WeatherCard
