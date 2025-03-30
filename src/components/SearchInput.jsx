@@ -10,7 +10,7 @@ export default function SearchInput({ city, setCity, fetchWeather }) {
         className="p-2 border rounded-md shadow-sm w-full bg-white text-black"
       />
       <button
-        onClick={() => fetchWeather(city)} // ✅ Pass the city explicitly
+        onClick={() => fetchWeather(city)}
         className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 w-full sm:w-auto"
       >
         Search
