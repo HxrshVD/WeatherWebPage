@@ -18,7 +18,6 @@ export default function WeatherCard({ weather, fetchWeather, darkMode }) {
         className="mx-auto"
       />
 
-      {/* Centered refresh button */}
       <div className="flex justify-center mt-4">
         <button
           onClick={() => fetchWeather(weather.name)}
