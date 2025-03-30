@@ -1,10 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
 import { RotatingLines } from "react-loader-spinner";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
 import WeatherCard from "./WeatherCard";
 import Forecast from "./Forecast";
 import SearchInput from "./SearchInput";
+import ThemeToggle from "./ThemeToggle";
 import RecentSearches from "./RecentSearch";
 
 export default function WeatherApp() {
@@ -89,12 +89,7 @@ export default function WeatherApp() {
       )}
       <div className="flex items-center justify-between w-full max-w-md mb-4">
         <h1 className="text-2xl sm:text-3xl font-bold">Weather Dashboard</h1>
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="p-2 rounded-full bg-gray-300 dark:bg-gray-700"
-        >
-          {darkMode ? <MdLightMode size={24} /> : <MdDarkMode size={24} />}
-        </button>
+        <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
       <SearchInput city={city} setCity={setCity} fetchWeather={fetchWeather} />
       <RecentSearches
